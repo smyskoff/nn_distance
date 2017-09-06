@@ -1,0 +1,23 @@
+#+TITLE: Euclidean distance with neural network
+
+
+* An idea
+  Arguably, neural network can approximate any function. So I decided to try to
+  build such a network which approximates distance between two objects on image.
+  Not to concentrate on concrete object detection, I decided to generate toy
+  dataset of images with black background and a pair of white points and expect
+  the network approximates an Euclidean distance between these two points.
+
+* Dataset
+  Dataset is generated one. Size of dataset is selected to be arbitrary small
+  not to allow network to learn all the "patters", but move towards
+  generalization of the problem.
+
+  #+CAPTION: Dataset random images.
+  [[./images/dataset.jpg]]
+
+* Models
+  Here's collected just a few models I put in order to be exposed to public.
+  For the moment I did not intend to publish any valuable result, but provide
+  some convenient playground, using [[https://keras.io/][Keras]] as a DL framework for convenient rapid
+  prototyping.
